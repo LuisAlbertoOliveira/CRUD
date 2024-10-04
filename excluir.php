@@ -10,9 +10,7 @@
     <?php 
         require 'conexao.php';
         $id = $_REQUEST["id"];
-
         $dados = [];
-
        // var_dump($id);
        $sql = $pdo->prepare("SELECT * FROM usuario WHERE id = :id");
        $sql->bindValue(":id",$id);
